@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Card with Absolute Positioning</title>
+    <style>
+      .card {
+        position: relative; /*creates the positioning context for the absolute button */
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        background-color: white;
+      }
+
+      .close-button {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+
+      .card-content {
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <button class="close-button">X</button>
+      <h1 class="card-title">My CSS</h1>
+      <p class="card-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        dignissimos et illo minus iure cupiditate doloremque atque voluptates,
+        ab eveniet consectetur laboriosam rem aperiam praesentium nostrum saepe
+        nam quibusdam earum?
+      </p>
+    </div>
+  </body>
+</html>
